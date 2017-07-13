@@ -1,0 +1,16 @@
+
+{
+  "visible_filenames": [
+    "HikerTest.php",
+    "Hiker.php",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension" : ".php",
+
+  "tab_size": 4,
+
+  "display_name": "PHP, PHPUnit",
+
+  "image_name": "cyberdojofoundation/php_phpunit"
+}
