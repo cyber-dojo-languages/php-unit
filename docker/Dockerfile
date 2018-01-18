@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/php:7.0.22
+FROM  cyberdojofoundation/php:7.1.11
 LABEL maintainer=jon@jaggersoft.com
 
 RUN apt-get update
