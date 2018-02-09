@@ -1,8 +1,8 @@
-FROM  cyberdojofoundation/php:7.1.11
+FROM  cyberdojofoundation/php
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get update
-RUN apt-get install --yes phpunit
+RUN apt-get update \
+ && apt-get install --yes phpunit
 
 COPY red_amber_green.rb /usr/local/bin
 
