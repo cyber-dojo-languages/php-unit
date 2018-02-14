@@ -1,8 +1,9 @@
 <?php
-
 require_once 'Hiker.php';
 
-class HikerTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class HikerTest extends TestCase
 {
     public function testLife_the_universe_and_everything()
     {
