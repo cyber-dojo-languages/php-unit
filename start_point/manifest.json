@@ -1,4 +1,3 @@
-
 {
   "display_name": "PHP, PHPUnit",
 
@@ -10,7 +9,7 @@
 
   "image_name": "cyberdojofoundation/php_phpunit",
 
-  "filename_extension" : ".php",
+  "filename_extension": ".php",
 
   "tab_size": 4,
 
