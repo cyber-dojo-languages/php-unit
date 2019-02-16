@@ -11,7 +11,5 @@
 
   "filename_extension": ".php",
 
-  "tab_size": 4,
-
-  "runner_choice": "stateless"
+  "tab_size": 4
 }
