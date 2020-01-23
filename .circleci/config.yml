@@ -11,10 +11,19 @@ jobs:
 
 workflows:
   version: 2
-  build-publish-trigger:
-    jobs:
-      - build-publish-trigger:
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
           filters:
             branches:
-              only:
-                  - master
+              only: [ master ]
+    jobs:
+      - build-publish-trigger
+  commit:
+    jobs:
+      - build-publish-trigger:
+          context: cyberdojo-languages-context
+          filters:
+            branches:
+              only: [ master ]
