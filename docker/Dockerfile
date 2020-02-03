@@ -4,7 +4,7 @@
 FROM cyberdojofoundation/php
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# START of extra commands to fulfil runner's requirements (os=Ubuntu)
+# START of extra commands to fulfil runner's requirements (os=Debian)
 RUN (getent group sandbox) || (addgroup --gid 51966 sandbox)
 RUN (grep -q sandbox:x:41966 /etc/passwd) || (adduser --disabled-password --gecos "" --home /home/sandbox --ingroup sandbox --shell /bin/bash --uid 41966 sandbox)
 RUN apt-get update && apt-get install --yes coreutils bash tar file
@@ -13,6 +13,6 @@ RUN apt-get update && apt-get install --yes coreutils bash tar file
 
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get install --yes phpunit
-
+COPY install.sh .
+RUN ./install.sh && rm ./install.sh
 COPY red_amber_green.rb /usr/local/bin
