@@ -1,8 +1,10 @@
 #!/bin/bash -Eeu
 
-apt-get install --yes wget
-wget https://phar.phpunit.de/phpunit-8.5.phar
-apt-get remove --yes wget
+readonly VERSION=9
 
-chmod +x phpunit-8.5.phar
-mv phpunit-8.5.phar /usr/local/bin/phpunit
+apk add --no-cache wget
+wget https://phar.phpunit.de/phpunit-${VERSION}.phar
+apk del wget
+
+chmod +x phpunit-${VERSION}.phar
+mv phpunit-${VERSION}.phar /usr/local/bin/phpunit
