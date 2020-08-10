@@ -1,5 +1,6 @@
 #!/bin/bash -Eeu
 
+# Verison 10 will be released Feb 2021
 readonly VERSION=9
 
 apk add --no-cache wget
