@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/php:cbf90e8
+FROM cyberdojofoundation/php:0921ccd
 LABEL maintainer=jon@jaggersoft.com
 
 COPY install.sh .
