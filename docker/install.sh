@@ -1,10 +1,11 @@
-#!/bin/bash -Eeu
+#!/usr/bin/env bash
+set -Eeu
 
 readonly VERSION=13
 
-apk add --no-cache wget
+apt-get install --yes wget
 wget https://phar.phpunit.de/phpunit-${VERSION}.phar
-apk del wget
+apt-get remove --yes wget 
 
 chmod +x phpunit-${VERSION}.phar
 mv phpunit-${VERSION}.phar /usr/local/bin/phpunit
