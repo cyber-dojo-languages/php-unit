@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/php:5b52517
+FROM ghcr.io/cyber-dojo-languages/php:20b8ba5
 LABEL maintainer=jon@jaggersoft.com
 
 COPY install.sh .

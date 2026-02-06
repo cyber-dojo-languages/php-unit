@@ -1,7 +1,6 @@
 #!/bin/bash -Eeu
 
-# Verison 10 will be released Feb 2021
-readonly VERSION=9
+readonly VERSION=13
 
 apk add --no-cache wget
 wget https://phar.phpunit.de/phpunit-${VERSION}.phar
