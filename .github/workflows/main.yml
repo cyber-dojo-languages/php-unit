@@ -15,12 +15,10 @@ env:
 
 jobs:
 
-  build-publish:
+  build-test-publish:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: cyber-dojo-languages/pinned-checkout@main
 
       - name: Build image, test it, push to registry
         run: ./pipe_build_up_test.sh
